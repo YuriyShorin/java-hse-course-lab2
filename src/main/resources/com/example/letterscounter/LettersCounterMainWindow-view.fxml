@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="800.0" style="-fx-background-color: #A64AC9;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.letterscounter.LettersCounterAppMainPageController">
+   <Button layoutX="674.0" layoutY="166.0" mnemonicParsing="false" onAction="#openFileButtonClicked"
+           style="-fx-background-color: #FCCD04;" text="open" textAlignment="CENTER">
+      <font>
+         <Font name="MS Outlook" size="14.0"/>
+      </font>
+   </Button>
+   <Button fx:id="countLettersButton" disable="true" layoutX="674.0" layoutY="253.0" mnemonicParsing="false"
+           onAction="#countLettersButtonClicked" style="-fx-background-color: #FCCD04;" text="count letters"
+           visible="false">
+      <font>
+         <Font name="MS Outlook" size="14.0"/>
+      </font>
+   </Button>
+   <TextField fx:id="inputFileNameTextField" layoutX="23.0" layoutY="166.0" prefHeight="25.0" prefWidth="629.0"
+              promptText="path to file with letters to count">
+      <font>
+         <Font name="MS Outlook" size="14.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="outputFileNameTextField" cacheShape="false" disable="true" layoutX="23.0" layoutY="253.0"
+              prefHeight="25.0" prefWidth="629.0" promptText="path to file where you want to output results"
+              visible="false">
+      <font>
+         <Font name="MS Outlook" size="14.0"/>
+      </font>
+   </TextField>
+   <Text fill="#fccd04" layoutX="194.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         text="Letters counter app">
+      <font>
+         <Font name="MS Outlook" size="48.0"/>
+      </font>
+   </Text>
+</AnchorPane>
