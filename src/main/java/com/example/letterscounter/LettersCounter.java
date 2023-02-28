@@ -12,17 +12,17 @@ public class LettersCounter {
     /**
      * The file for which statistics are collected
      */
-    File inputFile;
+    private File inputFile;
 
     /**
      * The file for saving statistics
      */
-    File outputFile;
+    private File outputFile;
 
     /**
      * The map for calculating and storing statistics
      */
-    HashMap<Character, Integer> lettersCounter = new HashMap<>();
+    private final HashMap<Character, Integer> lettersCounter = new HashMap<>();
 
     /**
      * Method that opens input file
